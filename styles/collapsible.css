@@ -11,6 +11,10 @@
   font-size: 15px;
 }
 
+.collapsible .fa-minus {
+  display: none;
+}
+
 .collapsible:not(.active):hover {
   background-color: #e7e7e7;
 }
@@ -25,4 +29,12 @@
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
+}
+
+.active .fa-minus {
+  display: block;
+}
+
+.active .fa-plus {
+  display: none;
 }
