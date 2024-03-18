@@ -316,8 +316,8 @@ a{
 /*------footer-------*/
 
 .footer{
-    padding:100px 0 0;
-    border-top:2px solid black;
+    padding: 64px 0 64px;
+    border-top: 1px solid black;
 }
 .footer-container{
     display:flex;
