@@ -179,6 +179,7 @@ a{
 
 .item-slider {
     display: none;
+    height: 100%;
 }
 
 .item-slider.active {
@@ -221,6 +222,10 @@ a{
 
 
 /*--------cartegory-------*/
+.category-content-container {
+    column-gap: 32px;
+    flex-wrap: nowrap;
+}
 .cartegory{
     padding:100px 0 0;
 }
