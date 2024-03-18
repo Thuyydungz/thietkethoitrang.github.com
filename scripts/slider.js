@@ -19,6 +19,7 @@ function sliderRun(){
     dotItem[index].classList.add("active")
     index++
 }
+
 sliderContainer.addEventListener("mouseover",function(){
     clearInterval(timer)
 })
