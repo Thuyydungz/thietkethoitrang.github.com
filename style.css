@@ -28,8 +28,9 @@ a{
     position:fixed;
     width:100%;
     z-index: 999;
-    background-color:rgba(255, 255, 255, 0.3);
+    background-color: #ffffff;
     transition: all 0.3s ease;
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.1);
 }
 .top.active{
     background-color:rgba(255, 255, 255, 1);
@@ -151,27 +152,49 @@ a{
 
 /*----------slider-----------*/
 #Slider{
-    padding-bottom: 30px;
-    border-bottom: 2px solid #000;
-    overflow:hidden;
-}
-.aspect-ratio-169 {
-    display: block;
+    padding-top: 58px;
     position: relative;
-    padding-top: 56.25%;
-    transform: 0.3s;
-  }
-  
-  .aspect-ratio-169 img {
+    height: 870px;
+}
+
+.slider-container {
+    overflow: hidden;
+    height: inherit;
+    position: relative;
+}
+
+.w3-animate-right {
+    position: relative;
+    animation: animateright 0.4s
+}
+@keyframes animateright {
+    from {
+        right: -300px; 
+    } 
+    to {
+        right: 0; 
+    }
+}
+
+
+.item-slider {
+    display: none;
+}
+
+.item-slider.active {
     display: block;
-    position: absolute;
+}
+
+.item-slider img {
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
+    max-width: 100%;
+    border: none;
   }
+
   .dot-container {
     position: absolute;
+    bottom: 8px;
     height: 30px;
     width: 100%;
     display: flex;
@@ -182,18 +205,15 @@ a{
   .dot {
     height: 16px;
     width: 16px;
-    background-color: #ccc;
+    background-color: transparent;
     border-radius: 50%;
     margin-right: 12px;
     cursor: pointer;
+    border: 1px solid #ffffff;
   }
   .dot.active{
-    background-color: #333;
-
+    background-color: #ffffff;
   }
-
-
-
 
 
 
@@ -256,6 +276,7 @@ a{
     width: calc(25% - 12px);
     text-align: center;
     padding: 12px 0;
+    cursor: pointer;
 }
 .cartegory-right-content-item h1{
     font-size:11px;
