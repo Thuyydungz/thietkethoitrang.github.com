@@ -23,10 +23,6 @@
     margin-bottom: 20px;
     display: flex;
 }
-.form-group img{
-    width: 20px;
-    height: auto;
-}
 .form-input{
     background: transparent;
     border: 0;
